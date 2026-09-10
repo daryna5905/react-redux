@@ -4,12 +4,12 @@ import './styles/index.css';
 import App from './App.jsx';
 import { BrowserRouter } from 'react-router';
 import { Provider } from 'react-redux';
-import { store } from './redux/store/store.js';
+import { store } from './redux/Homework1/store/store.js';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/react-redux'>
         <App />
       </BrowserRouter>
     </Provider>
